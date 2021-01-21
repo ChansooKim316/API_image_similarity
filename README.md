@@ -2,6 +2,7 @@
 
 ### This api compares two images, and response with their simailarity (JSON).
 
+
 #### ■ To run this,
 
 * Bash
@@ -20,7 +21,6 @@ $env:FLASK_APP = "app"
 flask run
 ```
 
-```pip install Pillow ```
 
 #### ■ If you encounter any issue with importin PIL, please run ```pip install Pillow```
 
