@@ -26,9 +26,9 @@ flask run
 
 #### ■  If you want to test out the file upload using Postman,
 
-  1. Please comment out ```save_from_urls()``` function (line 73),
+  1. Please comment out ```save_from_urls()``` function (line 76),
 
-  2. and uncomment ```save_from_file_upload()``` function (line 76)
+  2. and uncomment ```save_from_file_upload()``` function (line 79)
  
 #### ■  Two routes :
   - http://127.0.0.1:5000/  (for API key validation)
