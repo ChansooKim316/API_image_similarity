@@ -1,6 +1,6 @@
 ## Image similarity
 
-### This api compares two images, and shows their simailarity.
+### This api compares two images, and response with their simailarity (JSON).
 
 #### To run this,
 
@@ -29,12 +29,12 @@ flask run
 
   2. and uncomment "save_from_file_upload()" function (line 76)
  
-#### Two routes :
+#### * Two routes :
   - http://127.0.0.1:5000/  (for API key validation)
   - http://127.0.0.1:5000/compare  (for image similarity)
   
   
-#### Environment
+#### * Environment
 
 - macOS Big Sur 11.0.1
 - Python 3.7.0
