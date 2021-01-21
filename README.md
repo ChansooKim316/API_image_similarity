@@ -22,7 +22,7 @@ flask run
 ```
 
 
-#### ■  If you encounter any issue with importin PIL, please run <h5>```pip install Pillow```</h5>
+#### ■  If you encounter any issue with importin PIL, please run ```pip install Pillow```
 
 #### ■  If you want to test out the file upload using Postman,
 
