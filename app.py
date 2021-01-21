@@ -5,8 +5,8 @@ import requests, imagehash
 * If you encounter any issue with PIL, please run 'pip install Pillow'
 
 * If you want to test out the file upload using Postman, 
-  1. please comment out "save_from_urls()" function (line 73),
-  2. and uncomment "save_from_file_upload" function (line 76)
+  1. please comment out "save_from_urls()" function (line 76),
+  2. and uncomment "save_from_file_upload" function (line 79)
   
 * Two routes :
   1. http://127.0.0.1:5000/          (for key validation)
@@ -42,9 +42,12 @@ def save_from_urls() :
 # a function that saves images from file upload.
 # (both inputs should be files)
 def save_from_file_upload():
+    form_data = request.files.to_dict()
+    keys = list(form_data)
     try :
-        file_1 = request.files['img1']
-        file_2 = request.files['img2']
+        # first value -> file_1 , second value -> file_2
+        file_1 = request.files[keys[0]]
+        file_2 = request.files[keys[1]]
         if file_1 and file_2 :
             file_1.save('image_1.png')
             file_2.save('image_2.png')
@@ -81,7 +84,7 @@ def compare():
             img2 = Image.open('./image_2.png')
         except :
             return  '''
-                    failed to read images \n (can't read data uri inputs)
+                    failed to read images
                     '''
         hash = imagehash.average_hash(img1)
         otherhash = imagehash.average_hash(img2)
