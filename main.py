@@ -89,6 +89,6 @@ def compare(url1: str = Form(...), url2: str = Form(...)):
     otherhash = imagehash.average_hash(img2)
     similarity = 100 - (hash - otherhash)
     # JSON encoding
-    json_similarity = jsonable_encoder(similarity)
+    json_similarity = jsonable_encoder({"Similarity": similarity})
 
     return JSONResponse(content=json_similarity)
