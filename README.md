@@ -3,41 +3,45 @@
 ### This api compares two images, and response with their simailarity (JSON).
 
 
-#### ■  To run this,
+#### ▶  Please install before test out
 
-* Bash
 ```bash
-$ export FLASK_APP=app
-$ flask run
-```
-* CMD
-```cmd
-set FLASK_APP=app
-flask run
-```
-* Powershell
-```powershell
-$env:FLASK_APP = "app"
-flask run
+pip install fastapi
+pip install python-multipart     (to receive 'form-data')
+pip install Pillow               (instead of PIL)
+pip install 'uvicorn[standard]'  (For Mac)
+pip install uvicorn[standard]    (For Windows)
 ```
 
 
-#### ■  If you encounter any issue with importin PIL, please run ```pip install Pillow```
 
-#### ■  If you want to test out the file upload using Postman,
+#### ▶ To initiate, please run
 
-  1. Please comment out ```save_from_urls()``` function (line 76),
+```bash
+uvicorn main:app --reload
+```
 
-  2. and uncomment ```save_from_file_upload()``` function (line 79)
- 
-#### ■  Two routes :
-  - http://127.0.0.1:5000/  (for API key validation)
-  - http://127.0.0.1:5000/compare  (for image similarity)
+#### ▶  On Postman, inputs should be :
+
+```bash
+______________________________________________________
+    Route      |      Key       |        Value        |
+------------------------------------------------------|    
+  :8000/key    |     api_key    |   kmrhn74zgzcq4nqb  |
+______________________________________________________|
+```
+
+#### ▶  Three routes :
+
+  - http://127.0.0.1:8000/         -> landing page
+  - http://127.0.0.1:8000/key      -> API Key validation
+  - http://127.0.0.1:8000/compare  -> Image comparison
   
   
-#### ■  Environment
+#### ▶  Environment
 
 - macOS Big Sur 11.0.1
 - Python 3.7.0
-- Flask 1.1.2
-- Werkzeug 1.0.1
+- FastAPI 0.63.0
+- Pillow 8.1.0
+- ImageHash 4.2.0
