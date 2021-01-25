@@ -1,6 +1,6 @@
 ## Image Similarity
 
-### This api compares two images, and response with their simailarity (JSON).
+### This API compares two images, and returns simailarity as a JSON response.
 
 
 #### ▶  Please install before test out
