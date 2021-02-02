@@ -12,7 +12,7 @@
 
 ![](usage/image_inputs.png)
 
-#### ▶  Please install before test out
+#### ▶  Please install before you test out
 
 ```bash
 pip install fastapi
@@ -23,7 +23,7 @@ pip install uvicorn[standard]    (For Windows)
 ```
 
 
-#### ▶ To initiate, please run
+#### ▶ Please run the command to run the server
 
 ```bash
 uvicorn main:app --reload
