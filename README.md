@@ -23,7 +23,7 @@ uvicorn main:app --reload
 
 #### ▶  With Postman, inputs should be :
 
-##### < API key : Authorization -> API Key >
+##### < API key input : Authorization -> API Key >
 ```bash
 ______________________________________________________
     Route      |      Key       |        Value        |
@@ -31,7 +31,7 @@ ______________________________________________________
   :8000/key    |     api_key    |   kmrhn74zgzcq4nqb  |
 ______________________________________________________|
 ```
-##### < Images : Body -> form-data >
+##### < Image inputs : Body -> form-data >
 ```bash
 ___________________________________________________
       Route       |    Key     |        Value      |
