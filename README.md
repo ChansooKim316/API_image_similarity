@@ -6,7 +6,7 @@
 
 #### < API key input >
 
-![](usage/api_key.png)
+![](usage/api_key.png=20x10)
 
 #### < Image inputs >
 
