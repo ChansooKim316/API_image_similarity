@@ -1,6 +1,6 @@
 ## Image Similarity
 
-### This API compares two images, and returns simailarity as a JSON response.
+### This API compares two images, and returns simailarity figure as JSON response.
 
 #### ▶ How to test out with Postman
 
