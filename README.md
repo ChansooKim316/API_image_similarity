@@ -4,7 +4,10 @@
 
 #### ▶ How to test out with Postman
 
+##### < API key input >
 
+
+##### < Image inputs >
 
 
 #### ▶  Please install before test out
