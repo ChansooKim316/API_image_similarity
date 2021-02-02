@@ -21,7 +21,7 @@ pip install uvicorn[standard]    (For Windows)
 uvicorn main:app --reload
 ```
 
-#### ▶  On Postman, inputs should be :
+#### ▶  With Postman, inputs should be :
 
 ##### < API key : Authorization -> API Key >
 ```bash
