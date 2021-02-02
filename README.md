@@ -6,11 +6,11 @@
 
 #### < API key input >
 
-![](usage/api_key.png=20x10)
+![](./usage/api_key.png)
 
 #### < Image inputs >
 
-![](usage/image_inputs.png)
+![](./usage/image_inputs.png)
 
 #### ▶  Please install before you test out
 
