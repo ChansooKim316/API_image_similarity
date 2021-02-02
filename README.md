@@ -39,8 +39,9 @@ uvicorn main:app --reload
   
 #### ▶  Environment
 
-- macOS Big Sur 11.0.1
-- Python 3.7.0
-- FastAPI 0.63.0
-- Pillow 8.1.0
-- ImageHash 4.2.0
+- OS : macOS Big Sur 11.0.1
+- Language : Python 3.7.0
+- Libraries :
+  - FastAPI 0.63.0
+  - Pillow 8.1.0
+  - ImageHash 4.2.0
