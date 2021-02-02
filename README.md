@@ -2,7 +2,7 @@
 
 ### This API compares two images, and returns simailarity as a JSON response.
 
-#### ▶ How to test with Postman
+#### ▶ How to test out with Postman
 
 #### < API key input >
 
