@@ -2,13 +2,15 @@
 
 ### This API compares two images, and returns simailarity as a JSON response.
 
-#### ▶ How to test out with Postman
+#### ▶ How to test with Postman
 
-##### < API key input >
+#### < API key input >
 
+![](usage/api_key.png)
 
-##### < Image inputs >
+#### < Image inputs >
 
+![](usage/image_inputs.png)
 
 #### ▶  Please install before test out
 
@@ -21,31 +23,10 @@ pip install uvicorn[standard]    (For Windows)
 ```
 
 
-
 #### ▶ To initiate, please run
 
 ```bash
 uvicorn main:app --reload
-```
-
-#### ▶  With Postman, inputs should be :
-
-##### < API key input : Authorization -> API Key >
-```bash
-______________________________________________________
-    Route      |      Key       |        Value        |
-------------------------------------------------------|    
-  :8000/key    |     api_key    |   kmrhn74zgzcq4nqb  |
-______________________________________________________|
-```
-##### < Image inputs : Body -> form-data >
-```bash
-___________________________________________________
-      Route       |    Key     |        Value      |
----------------------------------------------------|        
-  :8000/compare   |    url1    |     https:// ...  |
-  :8000/compare   |    url2    |     https:// ...  |
-___________________________________________________|  
 ```
 
 
