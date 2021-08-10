@@ -76,18 +76,21 @@ def compare(url1: str = Form(...), url2: str = Form(...)):
     try :
         urllib.request.urlretrieve(url1, "image1.png")
         urllib.request.urlretrieve(url2, "image2.png")
-    except Exception as e:
-        return "An error has occurred. Please try another image. \n" , e
+    except Exception as err:
+        return "Something went wrong... Please try other images. \n" , err
+
     # read images
     try:
         img1 = Image.open('image1.png')
         img2 = Image.open('image2.png')
-    except Exception as e:
-        return "An error has occurred. Please try another image. \n" , e
+    except Exception as err:
+        return "Something went wrong... Please try other images. \n" , err
+
     # calculate similarity
     hash = imagehash.average_hash(img1)
     otherhash = imagehash.average_hash(img2)
     similarity = 100 - (hash - otherhash)
+
     # JSON encoding
     json_similarity = jsonable_encoder({"Similarity": similarity})
 
