@@ -4,19 +4,19 @@
 
 #### ▶ Usage
 
-#### < API key authorization >
+#### 1. API key authorization
 
 <img src="./usage/auth.PNG" width="200">
 
-#### < Invalid API key >
+#### 2. Invalid API key
 
 <img src="./usage/invalid.PNG" width="300">
 
-#### < Image URL inputs >
+#### 3. Image URL inputs 
 
 <img src="./usage/compare.PNG" width="300">
 
-#### < Showing result >
+#### 4. Result
 
 <img src="./usage/result.PNG" width="200">
 
@@ -31,7 +31,7 @@ pip install Pillow  (instead of PIL)
 ```
 
 
-#### ▶ Run the command 
+#### ▶ Run commands
 
 ```bash
 export FLASK_APP=main
