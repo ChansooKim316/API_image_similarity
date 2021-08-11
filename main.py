@@ -28,18 +28,13 @@ api_key = '1234567890'
 db_tokens = []
 
 
-# def compare_page():
-#    return '''
-#          <h1>COMPARE</h1>
-#          '''
-
 def auth_required(func):
    @wraps(func)
    def verify(*args, **kwargs):
       if (session and session['token'] in db_tokens):
          return func(*args, **kwargs)
       else:
-         return redirect(url_for("/"))
+         return redirect(url_for("auth"))
    return verify
 
 
@@ -59,13 +54,18 @@ def set_token():
    return
 
 
-# @app.route("/")
-# def index():
-#    return "the server is running"
-
-
-@app.route("/", methods = ['GET', 'POST'])
+@app.route("/")
 def index():
+   return '''
+            <h3>The server is running</h3>
+            <form action="http://localhost:5000/auth">
+               <input type="submit" value="Go to the log-in page" />
+            </form>
+         '''
+
+
+@app.route("/auth", methods = ['GET', 'POST'])
+def auth():
    if request.method == 'POST':
       # Verify the api key
       if(verify_api_key(request.form['api_key'])):
@@ -77,6 +77,7 @@ def index():
          return '''
                <form action = "" method = "post">
                   <h3 style="color:red;">Invalid API key. Please try again.</h3>
+                  <p>(key : 1234567890)</p>
                   <p>Username : user1</p>
                   <p>API Key : <input type = text name = api_key value='1234567890' /></p>
                   <p><input type = submit value = Login /></p>
