@@ -8,7 +8,7 @@
 
 <img src="./usage/auth.PNG" width="200">
 
-#### 2. Invalid API key
+#### 2. Warning for invalid API key
 
 <img src="./usage/invalid.PNG" width="300">
 
@@ -27,7 +27,7 @@
 pip install flask
 ```
 ```bash
-pip install Pillow  (instead of PIL)
+pip install Pillow
 ```
 
 
