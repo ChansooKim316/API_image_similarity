@@ -1,47 +1,50 @@
 ## Image Similarity
 
-### This API compares two images, and returns the simailarity(percentage) as JSON response.
+### This API compares two images, and returns the simailarity as percentage
 
-#### ▶ How to test out with Postman
+#### ▶ Usage
 
-#### < API key input >
+#### < API key authorization >
 
-![](./usage/api_key.png)
+<img src="./usage/auth.PNG" width="200">
 
-#### < Image inputs >
+#### < Invalid API key >
 
-![](./usage/image_inputs.png)
+<img src="./usage/invalid.PNG" width="300">
 
-#### ▶  Please install before you test out
+#### < Image URL inputs >
+
+<img src="./usage/compare.PNG" width="300">
+
+#### < Showing result >
+
+<img src="./usage/result.PNG" width="200">
+
+
+#### ▶  Packages to install
 
 ```bash
-pip install fastapi
-pip install python-multipart     (to receive 'form-data')
-pip install Pillow               (instead of PIL)
-pip install 'uvicorn[standard]'  (For Mac)
-pip install uvicorn[standard]    (For Windows)
+pip install flask
+```
+```bash
+pip install Pillow  (instead of PIL)
 ```
 
 
-#### ▶ Please run the command to run the server
+#### ▶ Run the command 
 
 ```bash
-uvicorn main:app --reload
+export FLASK_APP=main
+```
+```bash
+flask run
 ```
 
-
-#### ▶  Three routes :
-
-  - http://127.0.0.1:8000/         -> landing page
-  - http://127.0.0.1:8000/key      -> API Key validation
-  - http://127.0.0.1:8000/compare  -> Image comparison
-  
-  
 #### ▶  Environment
 
-- OS : macOS Big Sur 11.0.1
-- Language : Python 3.7.0
+- OS : Windows
+- Language : Python 3.9.0
 - Libraries :
-  - FastAPI 0.63.0
-  - Pillow 8.1.0
-  - ImageHash 4.2.0
+  - Flask
+  - Pillow
+  - ImageHash
