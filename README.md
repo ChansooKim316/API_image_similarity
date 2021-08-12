@@ -29,16 +29,16 @@ pip install flask
 ```bash
 pip install Pillow
 ```
+```bash
+pip install ImageHash
+```
+
 
 
 #### ▶ Run commands
 
-```bash
-export FLASK_APP=main
-```
-```bash
-flask run
-```
+1. ```export FLASK_APP=main```
+2. ```flask run```
 
 #### ▶  Environment
 
