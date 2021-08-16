@@ -135,15 +135,13 @@ def compare():
       hash1 = imagehash.average_hash(img1)
       hash2 = imagehash.average_hash(img2)
       similarity = 100 - (hash1 - hash2)
-      print('similarity :')
-      # print(similarity)
+      print('similarity :', similarity)
 
       return '''
             <h1>Similarity : {}%</h1>
-            <form action="http://localhost:5000/compare">
+            <form action="javascript:history.back()">
                <input type="submit" value="Go back" />
             </form>
-            <a href="javascript:history.back()">BACK</a>
             '''.format(similarity)
 
    return '''
