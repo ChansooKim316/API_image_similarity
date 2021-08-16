@@ -35,10 +35,9 @@ pip install ImageHash
 
 
 
-#### ▶ Run commands
+#### ▶ Run command
 
-1. ```export FLASK_APP=main```
-2. ```flask run```
+   ``` flask run```
 
 #### ▶  Environment
 
