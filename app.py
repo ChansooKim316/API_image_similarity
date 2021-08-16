@@ -128,7 +128,11 @@ def compare():
          img1 = Image.open('images/image1')
          img2 = Image.open('images/image2')
       except Exception as err:
-         return "<h3>Something went wrong... Please try other URLs.</h3> \n"
+         return '''<h3>Something went wrong... Please try other URLs.</h3> \n
+                  <form action="javascript:history.back()">
+                     <input type="submit" value="Go back" />
+                  </form>
+               '''
       print('read images')
 
       # Calculate similarity
