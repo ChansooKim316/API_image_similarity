@@ -110,7 +110,11 @@ def compare():
          image1 = requests.get(url1, stream = True) 
          image2 = requests.get(url2, stream = True) 
       except Exception as err:
-         return "<h3>Something went wrong... Please try URLs that start with 'https://...' </h3> \n"
+         return '''<h3>Something went wrong... Please try URLs that start with 'https://...' </h3> \n
+                   <form action="javascript:history.back()">
+                     <input type="submit" value="Go back" />
+                   </form>
+               '''
 
 
       if image1.status_code == 200 and image2.status_code == 200:
