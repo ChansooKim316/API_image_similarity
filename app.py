@@ -58,7 +58,7 @@ def set_token():
 def index():
    return '''
             <h3>The server is running</h3>
-            <form action="http://13.125.226.72:5000/auth">
+            <form action="https://img-api.csk-hub.com/auth">
                <input type="submit" value="Go to the log-in page" />
             </form>
          '''
