@@ -1,7 +1,9 @@
 ## Image Similarity
 
-### This API compares two images, and returns the simailarity as percentage
-
+### This API compares two images, and returns the simailarity as percentage.
+### Visit [here](http://img-api.csk-hub.com/) to see the live page
+  
+  
 #### ▶ Usage
 
 #### 1. API key authorization
